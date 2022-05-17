@@ -4,13 +4,13 @@ def number_to_time(number):
     m = "minute"
     h = "hour"
 
-    if hour > 1:
+    if hour < 1:
         h += "s"
 
-    if minute > 1:
+    if minute < 1:
         m += "s"
 
     print(f' {hour} {h} {minute} {m}')
 
 
-number_to_time(133)
+number_to_time(0)
