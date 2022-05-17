@@ -1,14 +1,18 @@
-def output_vowels(word):
-    vowels = "Vowels: "
+def output_common(word_i, word_ii):
+    common = "common letters: "
 
-    temp_string = word.lower()
-    for i in "aeiou":
-        if(temp_string.count(i) > 0):
-            vowels += i+", "
+    temp_string_i = word_i.lower()
+    temp_string_ii = word_ii.lower()
 
-    vowels = vowels[:-2]
+    for i in temp_string_ii:
 
-    return vowels
+        if(temp_string_i.count(i) > 0):
+            if(i != ""):
+
+                common += +", "
+
+    common = common[:-2]
+    return common
 
 
-print(output_vowels("Umuzi"))
+print((output_common("Heart", "Heat"))
