@@ -1,6 +1,6 @@
-def area_of_a_triangle(a, b, c):
-    s = (a + b + c) / 2
-    area = (s*(s-a)*(s-b)*(s-c))**0.5
+def area_of_a_triangle(side1, side2, side3):
+    area_of_a_triangle = (side1 + side2 + side3) / 2
+    area = (s*(s-side1)*(s-side2)*(s-side3))**0.5
 
     return area
 
