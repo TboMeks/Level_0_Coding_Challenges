@@ -1,5 +1,5 @@
 def number_to_time(number):
-    hour = number // 120
+    hour = number // 60
     minute = number % 60
     m = "minute"
     h = "hour"
