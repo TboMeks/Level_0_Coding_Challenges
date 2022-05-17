@@ -1,5 +1,5 @@
 def output_common(word_i, word_ii):
-    common = "common letters:"
+    common = "Common letters: "
 
     temp_string_i = word_i.lower()
     temp_string_ii = word_ii.lower()
