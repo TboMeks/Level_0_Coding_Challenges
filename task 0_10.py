@@ -15,4 +15,4 @@ def output_common(word_i, word_ii):
     return common
 
 
-print(output_common("Heart", "Heat")
+print((output_common("Heart", "Heat"))
