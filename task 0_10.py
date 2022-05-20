@@ -1,18 +1,14 @@
 def output_common(word_i, word_ii):
-    common = "Common letters: "
+    #    common = "Common letters: "
 
     temp_string_i = word_i.lower()
     temp_string_ii = word_ii.lower()
 
-    for i in temp_string_ii:
+    letters = (set(temp_string_i) & set(temp_string_ii))
+    words = (letter for letter in letters)
+    character = ", " .join(words)
 
-        if(temp_string_i.count(i) > 0):
-            if(i != " "):
-
-                common += i+", "
-
-    common = common[:-2]
-    return common
+    print(f"Common letters: {character}")
 
 
-print(output_common("house", "computers"))
+output_common("house", "computers")
